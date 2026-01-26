@@ -12,4 +12,10 @@ fun main() {
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
         println("i = $i")
     }
+    //example of naming
+    val userName: String = "JohnDoe"
+    val userAge: Int = 30
+    val isUserActive: Boolean = true
+    val userPhoneNumber: String = "+1234567890"
+    val numberOfStudents: Int = 50
 }
