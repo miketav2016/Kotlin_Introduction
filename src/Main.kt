@@ -1,3 +1,5 @@
+import oop.classAndObject.*
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
@@ -68,10 +70,9 @@ fun main() {
     println(num) // Теперь num равно 4
 
 
-
     // Читаем ввод с консоли и переводим в число enteredString одноразовая история использования
     fun defConvert() {
-    // Выводим приглашение для ввода
+        // Выводим приглашение для ввода
         println("Введите целое число ")
         val enteredString = readlnOrNull()
         val enteredInt = enteredString!!.toInt() // Используем !! для проверки, что переменная не пустая
@@ -79,11 +80,11 @@ fun main() {
         val enteredShort = enteredString.toShort()
         val enteredLong = enteredString.toLong()
 
-    // Выводим числа обратно в консоль
-    println(enteredInt) // Введенное число (Int)
-    println(enteredByte) // Введенное число (Byte)
-    println(enteredShort) // Введенное число (Short)
-    println(enteredLong) // Введенное число (Long)
+        // Выводим числа обратно в консоль
+        println(enteredInt) // Введенное число (Int)
+        println(enteredByte) // Введенное число (Byte)
+        println(enteredShort) // Введенное число (Short)
+        println(enteredLong) // Введенное число (Long)
     }
 
 
@@ -129,38 +130,38 @@ fun main() {
     }
     val str: String? = "Хелло" // Тут любая строка или null
 
-    val strLength: Int? = str as? Int // Если преобразование не удается, возвращает null вместо выброса исключения ClassCastException.
+    val strLength: Int? =
+        str as? Int // Если преобразование не удается, возвращает null вместо выброса исключения ClassCastException.
     val defaultValue = 0
     val resultDefaultValue = nullableVariable ?: defaultValue
 
-    fun fiboFun(){
+    fun fiboFun() {
         // Код писать сюда 🤓
         println("fiboFun")
-        var num=  readlnOrNull()!!.toInt()
-        var numcount =  2
-        var num1=  1
-        var num2=  1
+        var num = readlnOrNull()!!.toInt()
+        var numcount = 2
+        var num1 = 1
+        var num2 = 1
         if (num == 1)
             println(num1)
-        else if (num == 2)
-        {
+        else if (num == 2) {
             println(num1)
             println(num2)
-        }
-        else {
+        } else {
             println(num1)
             println(num2)
             do {
-                val num3 = num1+num2
-                println(num1+num2)
-                num1=num2
+                val num3 = num1 + num2
+                println(num1 + num2)
+                num1 = num2
                 num2 = num3
                 numcount++
-            }
-            while(num>numcount)
+            } while (num > numcount)
         }
     }
-
     fiboFun()
+
+//section oop
+    oop.OOPFun.abstractClasses0()
 
 }
