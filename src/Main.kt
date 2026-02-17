@@ -1,4 +1,5 @@
 import cp1_2_mainChapter.HelloWorld
+import practik.Matrix
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -13,5 +14,8 @@ fun main() {
     HelloWorld
 //section oop
    // cp8Oop.OOPFun.abstractClasses0()
+
+
+    Matrix.multiplyMatrix()
 
 }
